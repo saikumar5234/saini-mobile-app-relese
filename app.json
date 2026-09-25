@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Saini Dry Fruits",
+    "slug": "MobileDryyFruits",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/adaptive-icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "icon": "./assets/ios-icon.png",
+      "bundleIdentifier": "com.sai72458627.MobileDryyFruits"
+    },
+    "android": {
+      "icon": "./assets/adaptive-icon.png",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff",
+        "monochromeImage": "./assets/adaptive-icon.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.sai72458627.MobileDryyFruits",
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "notification": {
+      "icon": "./assets/adaptive-icon.png",
+      "color": "#ffffff",
+      "androidMode": "default",
+      "androidCollapsedTitle": "Saini Dry Fruits Updates",
+      "iosDisplayInForeground": true
+    },
+    "web": {
+      "favicon": "./assets/adaptive-icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1fce3449-b8d8-4e2f-b1d9-f7993c267282"
+      }
+    },
+    "owner": "sai72458627"
+  }
+}

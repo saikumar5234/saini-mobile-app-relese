@@ -1,0 +1,68 @@
+export const translations = {
+  en: {
+    title: 'Products',
+    search: 'Search',
+    searchProduct: 'Search any product',
+    add: 'Add',
+    logout: 'Logout',
+    noName: 'No Name',
+    loading: 'Loading...',
+    noGreeting: 'No greeting available',
+    newGreeting: 'You have a new greeting!',
+    fromEnews: 'From eNews',
+    yahooFinance: 'Yahoo! Finance',
+    selectLanguage: 'Choose Your Language',
+    selectLanguageSubtitle: 'Select your preferred language to continue',
+    continue: 'Continue',
+    welcome: 'Welcome to',
+    appName: 'Mobile Dry Fruits',
+    newProductLaunch: 'New Product Launch',
+    outOfStock: 'Out of Stock',
+  },
+  te: {
+    title: 'ఉత్పత్తులు',
+    search: 'వెతకండి',
+    searchProduct: 'ఏ ఉత్పత్తినైనా వెతకండి',
+    add: 'జోడించండి',
+    logout: 'లాగ్అవుట్',
+    noName: 'పేరు లేదు',
+    loading: 'లోడ్ అవుతోంది...',
+    noGreeting: 'గ్రీటింగ్ అందుబాటులో లేదు',
+    newGreeting: 'మీకు కొత్త గ్రీటింగ్ ఉంది!',
+    fromEnews: 'ఇ-న్యూస్ నుండి',
+    yahooFinance: 'యాహూ! ఫైనాన్స్',
+    selectLanguage: 'మీ భాషను ఎంచుకోండి',
+    selectLanguageSubtitle: 'కొనసాగించడానికి మీ ఇష్టమైన భాషను ఎంచుకోండి',
+    continue: 'కొనసాగించండి',
+    welcome: 'స్వాగతం',
+    appName: 'మొబైల్ డ్రై ఫ్రూట్స్',
+    newProductLaunch: 'కొత్త ఉత్పత్తి ప్రారంభం',
+    outOfStock: 'స్టాక్ లేదు',
+  },
+  hi: {
+    title: 'उत्पाद',
+    search: 'खोजें',
+    searchProduct: 'किसी भी उत्पाद को खोजें',
+    add: 'जोड़ें',
+    logout: 'लॉगआउट',
+    noName: 'कोई नाम नहीं',
+    loading: 'लोड हो रहा है...',
+    noGreeting: 'कोई अभिवादन उपलब्ध नहीं',
+    newGreeting: 'आपको एक नया अभिवादन मिला है!',
+    fromEnews: 'ई-न्यूज़ से',
+    yahooFinance: 'याहू! फाइनेंस',
+    selectLanguage: 'अपनी भाषा चुनें',
+    selectLanguageSubtitle: 'जारी रखने के लिए अपनी पसंदीदा भाषा चुनें',
+    continue: 'जारी रखें',
+    welcome: 'स्वागत है',
+    appName: 'मोबाइल ड्राई फ्रूट्स',
+    newProductLaunch: 'नया उत्पाद लॉन्च',
+    outOfStock: 'स्टॉक खत्म',
+  }
+};
+
+export const getProductName = (name, selectedLanguage, t) => {
+  if (!name) return t.noName;
+  if (typeof name === 'string') return name;
+  return name[selectedLanguage] || name.en || t.noName;
+}; 
