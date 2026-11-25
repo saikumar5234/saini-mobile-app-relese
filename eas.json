@@ -5,13 +5,22 @@
   },
   "build": {
     "development": {
+      "node": "22.15.0",
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
     },
     "preview": {
-      "distribution": "internal"
+      "node": "22.15.0",
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
     },
     "production": {
+      "node": "22.15.0",
       "autoIncrement": true,
       "android": {
         "buildType": "app-bundle"
